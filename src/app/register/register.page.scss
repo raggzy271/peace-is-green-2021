@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+
+#wrapper {
+  height: 100%;
+  background-image: radial-gradient(circle, #28529e, #496db4, #6788c9, #85a5df, #a4c2f4);
+}
+
+#container {
+    height: 90%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: var(--ion-color-primary-contrast);
+    padding: 1em;
+    overflow: auto;
+}
+
+ion-buttons {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+ion-select {
+    color: var(--ion-color-primary);
+    font-size: 1.5rem;
+    --padding-start: 0.2em;
+}
+
+ion-select::part(placeholder) {
+    opacity: .7;
+}
+
+ion-select::part(icon) {
+    position: absolute;
+    right: 1em;
+    opacity: .7;
+}
+
+ion-item, ion-input {
+    margin: .5em 0;
+}
+
+ion-input {
+    --background: #fff;
+    font-size: 1.5rem;
+    color: var(--ion-color-primary);
+    text-align: left;
+    --padding-start: 1em;
+    --padding-end: 1em;
+    --placeholder-opacity: .7;
+}
+
+ion-list-header {
+    padding: .5em 1em;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--ion-color-primary);
+}
+
+.translucent {
+    opacity: .7;
+}
+
+::ng-deep .wider-popover
+{
+  --width: 95%;
+  --max-width: 400px;
+}
+
+ion-checkbox {
+    margin-right: 1em;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.medium {
+    font-size: 1.25rem;
+}
+
+ion-button {
+    font-family: inherit;
+    font-size: 1.25rem;
+    width: 90%;
+    margin: .5em auto;
+    text-transform: capitalize;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+}
+

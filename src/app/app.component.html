@@ -1,3 +1,78 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="end" content-id="main">
+    <ion-content class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+      <div id="content">
+        <ion-list class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+          <ion-menu-toggle>
+            <a href="home-after-registration#home">
+              <ion-item id="home-item" class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+                <ion-icon name="home-outline" slot="start" class="item"></ion-icon>
+                <ion-label class="item">Home</ion-label>
+              </ion-item>
+            </a>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <a href="home-after-registration#event-info">
+              <ion-item id="event-info-item" class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+                <ion-icon name="information-outline" slot="start" class="item"></ion-icon>
+                <ion-label class="item">Event Information</ion-label>
+              </ion-item>
+            </a>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <a href="home-after-registration#guests-and-hosts">
+              <ion-item id="guests-and-hosts-item" class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+                <ion-icon name="earth-outline" slot="start" class="item"></ion-icon>
+                <ion-label class="item">Meet the Hosts and Guests</ion-label>
+              </ion-item>
+            </a>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <a href="home-after-registration#activities">
+              <ion-item id="activities-item" class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+                <ion-icon name="book-outline" slot="start" class="item"></ion-icon>
+                <ion-label class="item">Activities</ion-label>
+              </ion-item>
+            </a>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item id="register-item" routerLink="/register" class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+              <ion-icon name="document-outline" slot="start" class="item"></ion-icon>
+              <ion-label class="item">Registration Page</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <a href="mailto:peaceisgreen@actnow.org.in">
+            <ion-item class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+              <ion-icon name="mail-outline" slot="start" class="item"></ion-icon>
+              <ion-label class="item">Contact</ion-label>
+            </ion-item>
+          </a>
+          <a href="http://www.actnow.org.in/">
+            <ion-item class="{{greenMenu ? 'green-back' : 'blue-back'}}">
+              <ion-icon name="globe-outline" slot="start" class="item"></ion-icon>
+              <ion-label class="item">Visit ACT NOW's Website</ion-label>
+            </ion-item>
+          </a>
+        </ion-list>
+        <ion-list id="social-links" class="item">
+          <a href="https://www.facebook.com/actnoworgin/">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://www.youtube.com/user/actnoworgin">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/actnoworgin/">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://twitter.com/actnoworgin">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/company/actnoworgin/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </ion-list>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

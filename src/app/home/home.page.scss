@@ -1,27 +1,56 @@
 #container {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-image: radial-gradient(circle, #28529e, #496db4, #6788c9, #85a5df, #a4c2f4);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  color: var(--ion-color-primary-contrast);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+img {
+  display: block;
 }
 
-#container a {
+p {
+  font-size: 1.5rem;
+}
+
+.PisG {
+  color: #B1FC61;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+ion-button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  width: 90%;
+  margin: .5em auto;
+  text-transform: capitalize;
+}
+
+a {
+  font-size: 1.25rem;
+  color: inherit;
   text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
 }

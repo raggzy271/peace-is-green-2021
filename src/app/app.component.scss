@@ -1,0 +1,54 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.green-back {
+    background: #B1FC63;
+    --background: #B1FC63;
+}
+
+.blue-back {
+    background: #28529e;
+    --background: #28529e;
+}
+
+.item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+
+.green-back .item {
+    color: #000;
+}
+
+.blue-back .item {
+    color: #fff;
+}
+
+.green-back .current-menu-item {
+    background: #80b900;
+    --background: #80b900;
+}
+
+.blue-back .current-menu-item {
+    background: #a4c2f4;
+    --background: #a4c2f4;
+}
+
+
+#social-links {
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

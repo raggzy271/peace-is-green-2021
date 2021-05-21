@@ -1,0 +1,187 @@
+<ion-content>
+  <app-no-internet *ngIf="offline"></app-no-internet>
+  <div id="wrapper">
+    <div id="container">
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'register')"></ion-menu-button>
+      </ion-buttons>
+
+      <img src="../../assets/Actnow-Logo-Without EdgeNew.png" alt="Act Now Logo">
+      <h1>Peace is Green - Every Act Matters</h1>
+      <h2>Registration Form</h2>
+
+      <form (submit)="submit()">
+        <div [ngSwitch]="progress">
+          <div *ngSwitchCase="0">
+            <ion-item>
+              <ion-select placeholder="Title" interface="popover" name="title" [(ngModel)]="title" required>
+                <ion-select-option value="Mr">Mr</ion-select-option>
+                <ion-select-option value="Ms">Ms</ion-select-option>
+                <ion-select-option value="Dr">Dr</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-input placeholder="First Name" name="first-name" [(ngModel)]="firstName" required></ion-input>
+            <ion-input placeholder="Middle Name (optional)" name="middle-name" [(ngModel)]="middleName"></ion-input>
+            <ion-input placeholder="Last Name (optional)" name="last-name" [(ngModel)]="lastName"></ion-input>
+          </div>
+
+          <div *ngSwitchCase="1">
+            <ion-list>
+              <ion-radio-group name="occupation" required [(ngModel)]="occupation">
+                <ion-list-header>
+                  <ion-label class="title label">Occupation</ion-label>
+                </ion-list-header>
+                <ion-item>
+                  <ion-label class="label">Teacher</ion-label>
+                  <ion-radio value="teacher"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Student</ion-label>
+                  <ion-radio value="student"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Principal</ion-label>
+                  <ion-radio value="principal"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Management</ion-label>
+                  <ion-radio value="management"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Guest</ion-label>
+                  <ion-radio value="guest"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Youth Climate Activist</ion-label>
+                  <ion-radio value="youth-climate-activist"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label class="label">Other</ion-label>
+                  <ion-radio value="other"></ion-radio>
+                </ion-item>
+                <ion-input *ngIf="occupation == 'other'" placeholder="Please specify" name="other-occupation" [(ngModel)]="otherOccupation">
+                </ion-input>
+              </ion-radio-group>
+            </ion-list>
+          </div>
+
+          <div *ngSwitchCase="2">
+            <ion-input placeholder="Organization Name" name="organization-name" [(ngModel)]="organizationName" required></ion-input>
+            <ion-item>
+              <ion-select placeholder="Type of Organization" interface="popover" name="organization-type" [interfaceOptions]="{'cssClass': 'wider-popover'}" [(ngModel)]="organizationType" required>
+                <ion-select-option value="educational">Educational Institution</ion-select-option>
+                <ion-select-option value="business">Business</ion-select-option>
+                <ion-select-option value="ngo">Non-governmental Organization</ion-select-option>
+                <ion-select-option value="public-sector">Government of Public Sector</ion-select-option>
+                <ion-select-option value="think-tank">Think Tank</ion-select-option>
+                <ion-select-option value="media">Media</ion-select-option>
+                <ion-select-option value="entertainment">Beauty Pageant, Film and Entertainment</ion-select-option>
+                <ion-select-option value="research">Research Institute</ion-select-option>
+                <ion-select-option value="student">Just a Student</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <p *ngIf="fromACTorENO == ''" class="translucent label">Are you from ACT NOW or Environment Online
+                Network?</p>
+              <ion-select interface="popover" name="from-ACT-or-ENO" [interfaceOptions]="{'cssClass': 'wider-popover'}" [(ngModel)]="fromACTorENO" required>
+                <ion-select-option value="country-coord">Yes, I am a Country Coordinator</ion-select-option>
+                <ion-select-option value="ENO-student">Yes, I am an ENO Student</ion-select-option>
+                <ion-select-option value="ENO-teacher">Yes, I am an ENO Teacher</ion-select-option>
+                <ion-select-option value="ACT-member">Yes, I am an ACT NOW member</ion-select-option>
+                <ion-select-option value="no">No, I am neither linked to ACT NOW nor ENO</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+          <div *ngSwitchCase="3">
+            <ion-input placeholder="Country Code (Eg. +91)" name="country-code" [(ngModel)]="countryCode" required></ion-input>
+            <ion-input placeholder="Mobile Number" name="mobile-number" [(ngModel)]="mobileNumber" required></ion-input>
+            <ion-item>
+              <ion-checkbox name="on-whatsapp" [(ngModel)]="onWhatsApp"></ion-checkbox>
+              <p class="label">Are you on Whatsapp?</p>
+            </ion-item>
+            <ion-input placeholder="Email Address" name="email" [(ngModel)]="email" required></ion-input>
+          </div>
+
+          <div *ngSwitchCase="4">
+            <ion-input placeholder="Nationality" name="nationality" [(ngModel)]="nationality" required></ion-input>
+            <ion-input placeholder="Country of Residence" name="country" [(ngModel)]="country" required></ion-input>
+          </div>
+
+          <div *ngSwitchCase="5">
+            <ion-list>
+              <ion-list-header>
+                <ion-label class="title label">I am interested in the following sessions...</ion-label>
+              </ion-list-header>
+              <ion-item>
+                <ion-checkbox name="session-1" [(ngModel)]="sessions[0]"></ion-checkbox>
+                <p class="label w-90 medium">Session 1: 12:00 – 15:00 IST | 06:30-09:30 UTC (4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-2" [(ngModel)]="sessions[1]"></ion-checkbox>
+                <p class="label w-90 medium">Session 2: 15:00 – 18:00 IST | 09:30-12:30 UTC (4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-3" [(ngModel)]="sessions[2]"></ion-checkbox>
+                <p class="label w-90 medium">Session 3: 18:00 – 21:00 IST | 12:30-15:30 UTC (4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-4" [(ngModel)]="sessions[3]"></ion-checkbox>
+                <p class="label w-90 medium">Session 4: 21:00 – 00:00 IST | 15:30-18:30 UTC (5 June/4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-5" [(ngModel)]="sessions[4]"></ion-checkbox>
+                <p class="label w-90 medium">Session 5: 00:00 – 03:00 IST | 18:30-21:30 UTC (5 June/4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-6" [(ngModel)]="sessions[5]"></ion-checkbox>
+                <p class="label w-90 medium">Session 6: 03:00 – 06:00 IST | 21:30-00:30 UTC (5 June/4 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-7" [(ngModel)]="sessions[6]"></ion-checkbox>
+                <p class="label w-90 medium">Session 7: 06:00 – 09:00 IST | 00:30-03:30 UTC (5 June 2021)</p>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox name="session-8" [(ngModel)]="sessions[7]"></ion-checkbox>
+                <p class="label w-90 medium">Session 8: 09:00 – 12:00 IST | 03:30-06:30 UTC (5 June 2021)</p>
+              </ion-item>
+            </ion-list>
+          </div>
+
+          <div *ngSwitchCase="6">
+            <ion-item>
+              <ion-checkbox name="agreement-1" [(ngModel)]="agreement1" required></ion-checkbox>
+              <p class="label w-90 medium">I agree that my name, title, organisation and country of residence will be
+                published in a list of participants on the Act Now and Environment Online event platform and Act Now and
+                Environment Online mobile application.</p>
+            </ion-item>
+          </div>
+
+          <div *ngSwitchCase="7">
+            <ion-item>
+              <ion-checkbox name="agreement-2" [(ngModel)]="agreement2" required></ion-checkbox>
+              <p class="label w-90 medium">I agree that my name, title, organization, country of residence and contact
+                information will be shared with Act Now and Environment Online partner organisations. The partner
+                organisations may save your contact information, etc. to their database and use your information when
+                sending related news or other marketing materials.</p>
+            </ion-item>
+
+            <ion-button type="submit" color="primary" >Submit</ion-button>
+          </div>
+        </div>
+      </form>
+
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button *ngIf="progress > 0" (click)="progress = progress - 1">
+          <ion-icon name="arrow-back"></  ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+      <ion-fab *ngIf="progress < 7" vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="progress = progress + 1">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+  </div>
+</ion-content>

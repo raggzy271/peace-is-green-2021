@@ -1,0 +1,359 @@
+<ion-content>
+  <app-no-internet *ngIf="offline"></app-no-internet>
+  <div id="container">
+    <section id="home">
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'home')"></ion-menu-button>
+      </ion-buttons>
+      <img src="../../assets/BlueEarthAndDove.png" alt="Peace is Green '21">
+      <h1 class="PisG">Peace is Green '21</h1>
+      <div>
+        <p>WORLD’S LONGEST & LARGEST ENVIRONMENT ONLINE EVENT</p>
+        <p>24 Hours – A Million Reach</p>
+      </div>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'home')"></ion-menu-button>
+      </ion-buttons>
+      <p>“Sustainability”, “Climate Change”, “Environment” – the words are being searched on google more than ever
+        before. The reason is obvious. We are headed to where search for “Life” will become a struggle if we do not mend
+        our ways and Act Now! But then, this is Us, this is our Life, and we will “Right” it! This is our moment. We
+        cannot turn back time. But we can grow trees, green our cities, rewild our gardens, change our diets and clean
+        up rivers and coasts. We are the generation that can make peace with nature.</p>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'home')"></ion-menu-button>
+      </ion-buttons>
+      <p>To celebrate World Environment Day, Act Now, together with Environment Online, Treebuddy.Earth, Brookfield
+        International School, Glamanand, and Envirate, brings to you, 2nd edition of our web symposium “PEACE IS
+        GREEN-EVERY ACT MATTERS”, world’s longest and largest environment online event, non-stop for 24 hours on 4-5
+        June 2021. The Web Symposium brings together individuals and organizations, the thinkers and the doers, from
+        around the world, and, may reach more a million participants in over 100 countries!</p>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'home')"></ion-menu-button>
+      </ion-buttons>
+      <p>We invite you to share your climate actions, and let us learn from you. CONTRIBUTE YOUR ACT, EVERY ACT MATTERS!
+      </p>
+      <p>Let’s get active, not anxious. Let’s reimagine, recreate, restore. Let’s be bold, not timid.</p>
+      <p>Join Us in #GenerationRestoration</p>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section id="event-info">
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Event Information</h2>
+      <table>
+        <tr>
+          <th>Event Title</th>
+          <td>PEACE IS GREEN - EVERY ACT MATTERS</td>
+        </tr>
+        <tr>
+          <th>Starts</th>
+          <td>4 June 2021, 12:00 IST | 06:30 UTC</td>
+        </tr>
+        <tr>
+          <th>Ends</th>
+          <td>5 June 2021 12:00 IST | 06:30 UTC</td>
+        </tr>
+        <tr>
+          <th>Venue</th>
+          <td>Zoom</td>
+        </tr>
+        <tr>
+          <th>Organizer</th>
+          <td>Act Now</td>
+        </tr>
+        <tr>
+          <th rowspan="5">Co-organizers</th>
+          <td>Environment Online</td>
+        </tr>
+        <tr>
+          <td>Treebuddy.Earth</td>
+        </tr>
+        <tr>
+          <td>Brookfield Intl. School</td>
+        </tr>
+        <tr>
+          <td>Glamanand</td>
+        </tr>
+        <tr>
+          <td>Envirate</td>
+        </tr>
+      </table>
+
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Event Timings<br>(8 Sessions)</h2>
+      <p>Session 1: 12:00 – 15:00 IST | 06:30-09:30 UTC (4 June 2021)</p>
+      <p>Session 2: 15:00 – 18:00 IST | 09:30-12:30 UTC (4 June 2021)</p>
+      <p>Session 3: 18:00 – 21:00 IST | 12:30-15:30 UTC (4 June 2021)</p>
+      <p>Session 4: 21:00 – 00:00 IST | 15:30-18:30 UTC (4 June 2021)</p>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Event Timings<br>(8 Sessions)</h2>
+      <p>Session 5: 00:00 – 03:00 IST | 18:30-21:30 UTC (4-5 June 2021)</p>
+      <p>Session 6: 03:00 – 06:00 IST | 21:30-00:30 UTC (4-5 June 2021)</p>
+      <p>Session 7: 06:00 – 09:00 IST | 00:30-03:30 UTC (5 June 2021)</p>
+      <p>Session 8: 09:00 – 12:00 IST | 03:30-06:30 UTC (5 June 2021)</p>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Event Themes</h2>
+      <div class="theme">
+        <h3>Every Act Matters</h3>
+        <p>When it comes to restoring the natural world, each one of us can make a difference!</p>
+      </div>
+      <div class="theme">
+        <h3>Fighting Fire with Fire</h3>
+        <p>Can forest restoration reduce the threat of fires?</p>
+      </div>
+      <div class="theme">
+        <h3>Blue Economy</h3>
+        <p>Our marine and coastal ecosystems are extremely valuable for sustainable life on earth.</p>
+      </div>
+      <div class="theme">
+        <h3>Every Drop Matters</h3>
+        <p>Healthy lakes and rivers make a healthy life on planet!</p>
+      </div>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Event Themes</h2>
+      <div class="theme">
+        <h3>Farmlands Feed Us</h3>
+        <p>However, their overuse is greater threat to wildlife than climate change.</p>
+      </div>
+      <div class="theme">
+        <h3>Mountains and Climate Change</h3>
+        <p>A global concern that cannot be ignored.</p>
+      </div>
+      <div class="theme">
+        <h3>Our Cities are Ecological Deserts</h3>
+        <p>We cannot turn back time. But we can green our cities.</p>
+      </div>
+      <div class="theme">
+        <h3>Wetlands for Our Future</h3>
+        <p>Act Now to prevent, stop, and reverse wetland loss.</p>
+      </div>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'event-info')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Some Resources You Must Read!</h2>
+      <ul>
+        <li><a
+            href="https://www.worldenvironmentday.global/get-involved/ecosystem-restoration-playbook?fbclid=IwAR2EL0ypElKj__fBL_yIBq00H8PAPJJtSkC4TF2cJZONdF_4YDWkwwjVjKU">Ecosystem
+            Restoration Play Book <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a href="https://www.unep.org/news-and-stories/story/beginners-guide-ecosystem-restoration">A beginner’s
+            guide to ecosystem restoration <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a
+            href="https://www.decadeonrestoration.org/stories/when-it-comes-restoring-natural-world-each-one-us-can-make-difference">When
+            it Comes To Restoring The Natural World, Each One Of Us Can Make a Difference <ion-icon name="open-outline">
+            </ion-icon></a></li>
+        <li><a
+            href="https://www.unep.org/news-and-stories/story/can-forest-restoration-reduce-threat-megafires?fbclid=IwAR11DHCh_q34e0j6f9Ndfo_CbczLKFAAVYmNLNPq4QNCtU4gQj17H0aOh2k">Can
+            forest restoration reduce the threat of megafires? <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a
+            href="https://www.usgs.gov/special-topic/water-science-school/science/lakes-and-reservoirs?qt-science_center_objects=0#qt-science_ceguests-and-hostsnter_objects">Lakes
+            and Reservoirs <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a href="https://sustainabledevelopment.un.org/content/documents/15434Blue_EconomyJun1.pdf">The Potential of
+            the Blue Economy <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a
+            href="https://www.unep.org/news-and-stories/press-release/our-global-food-system-primary-driver-biodiversity-loss">Our
+            global food system is the primary driver of biodiversity loss <ion-icon name="open-outline"></ion-icon></a>
+        </li>
+        <li><a
+            href="https://www.weadapt.org/sites/weadapt.org/files/2017/may/e_low_fullversion_mountain_cc.pdf">Mountains
+            and Climate Change - A Global Concern <ion-icon name="open-outline"></ion-icon></a></li>
+        <li><a
+            href="https://www.unep.org/news-and-stories/press-release/wetlands-our-future-act-now-prevent-stop-and-reverse-wetland-loss">Wetlands
+            for Our Future: Act Now to Prevent, Stop, and Reverse Wetland Loss <ion-icon name="open-outline"></ion-icon>
+          </a></li>
+      </ul>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section id="guests-and-hosts">
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'guests-and-hosts')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Hosts/Co-hosts</h2>
+      <div class="slider">
+        <ion-icon class="slider-nav" (click)="prev('hosts')" name="chevron-back-outline" [hidden]="isFirstHostSlide">
+        </ion-icon>
+        <ion-slides #hostSlides (ionSlideWillChange)="slideChange('hosts')">
+          <ion-slide *ngFor="let host of hosts">
+            <img src="http://www.actnow.org.in/images/{{host}}">
+          </ion-slide>
+        </ion-slides>
+        <ion-icon class="slider-nav" (click)="next('hosts')" name="chevron-forward-outline" [hidden]="isLastHostSlide">
+        </ion-icon>
+      </div>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'guests-and-hosts')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Guests of Honor</h2>
+      <div class="slider">
+        <ion-icon class="slider-nav" (click)="prev('guests')" name="chevron-back-outline" [hidden]="isFirstGuestSlide">
+        </ion-icon>
+        <ion-slides #guestSlides (ionSlideWillChange)="slideChange('guests')">
+          <ion-slide *ngFor="let guest of guests">
+            <img src="http://www.actnow.org.in/images/{{guest}}">
+          </ion-slide>
+        </ion-slides>
+        <ion-icon class="slider-nav" (click)="next('guests')" name="chevron-forward-outline"
+          [hidden]="isLastGuestSlide"></ion-icon>
+      </div>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'guests-and-hosts')"></ion-menu-button>
+      </ion-buttons>
+      <div>
+        <h2>Language Helpers</h2>
+        <p>These volunteers will be available for you before and during the event.</p>
+      </div>
+      <div class="slider">
+        <ion-icon class="slider-nav" (click)="prev('languageHelpers')" name="chevron-back-outline"
+          [hidden]="isFirstLanguageHelperSlide"></ion-icon>
+        <ion-slides #languageHelpersSlides (ionSlideWillChange)="slideChange('languageHelpers')">
+          <ion-slide *ngFor="let languageHelper of languageHelpers">
+            <img src="http://www.actnow.org.in/images/{{languageHelper}}">
+          </ion-slide>
+        </ion-slides>
+        <ion-icon class="slider-nav" (click)="next('languageHelpers')" name="chevron-forward-outline"
+          [hidden]="isLastLanguageHelperSlide"></ion-icon>
+      </div>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section id="activities">
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Activities</h2>
+      <p class="bold">Each participant will receive an International Certificate.</p>
+      <p class="bold">A few selected entries will be featured during the event.</p>
+      <p>Step 1 - Choose and carry out ONE or MORE activities given below:</p>
+      <div class="activity">
+        <h3>Film Making</h3>
+        <p><span class="bold">Length:</span> 1-3 minutes</p>
+        <p><span class="bold">Theme:</span> Every Act Matters, Act Now! (Feature your climate action)</p>
+        <p><span class="bold">Format:</span> MP4, MOV, AVI</p>
+      </div>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'activities')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Activities</h2>
+      <div class="activity">
+        <h3>Digital Photography</h3>
+        <p><span class="bold">Theme:</span> Our Ecosystem</p>
+        <p><span class="bold">Format:</span> JPG, JPEG, PNG</p>
+      </div>
+      <div class="activity">
+        <h3>Music and Song (writing, singing, solo, or synchronized chorus)</h3>
+        <p><span class="bold">Length:</span> 1-3 minutes</p>
+        <p><span class="bold">Theme:</span> Let’s Restore Our Ecosystems; Let’s reimagine, recreate, restore</p>
+        <p><span class="bold">Format:</span> MP3</p>
+      </div>
+      <div class="activity">
+        <h3>Poster</h3>
+        <p><span class="bold">Theme:</span> The Earth Will Live, We May Not, Act Now!</p>
+      </div>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Activities</h2>
+      <div class="activity">
+        <h3>Fancy Dress (for age 6 and below)</h3>
+        <p><span class="bold">Theme:</span> Any, related to environment</p>
+      </div>
+      <div class="activity">
+        <div class="activity">
+          <h3>Dance (solo, group, or synchronized)</h3>
+          <p><span class="bold">Length:</span> 1-3 minutes</p>
+          <p><span class="bold">Theme:</span> Any, original or recreation related to environment</p>
+        </div>
+        <h3>Slogan Making</h3>
+        <p><span class="bold">Theme:</span> Any original composition, related to environment</p>
+      </div>
+      <app-scroll-down color="black"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'activities')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Activities</h2>
+      <p>Step 2 - Complete the following steps to receive your International Certificate.</p>
+      <ol class="activity">
+        <li><a href="/register">Register for the event <ion-icon name="open-outline"></ion-icon></a> (if you haven't already)</li>
+        <li>
+          Carry out ANY TWO/THREE of the following:
+          <ul>
+            <li><a href="https://www.facebook.com/actnoworgin/">Like ACT NOW on Facebook <ion-icon name="open-outline"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/actnoworgin/">Follow ACT NOW on Instagram <ion-icon name="open-outline"></ion-icon></a></li>
+            <li><a href="https://twitter.com/actnoworgin/">Follow ACT NOW on Twitter <ion-icon name="open-outline"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/actnoworgin/">Subscribe ACT NOW on YouTube <ion-icon name="open-outline"></ion-icon></a></li>
+          </ul>
+        </li>
+        <li>
+          Tag and post your entry on YOUR Facebook/Instagram/Twitter.
+          <br>
+          <br>
+          Use the following hash and tags:
+          <br>
+          <br>
+          #actnoworgin #enoprogramme #peaceisgreen2021 #bfis #glamanand #generationrestoration #UNEP #treebuddy
+        </li>
+      </ol>
+      <app-scroll-down color="white"></app-scroll-down>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
+      </ion-buttons>
+      <h2>Activities</h2>
+      <p>Step 3 - Finally, email your entries.</p>
+      <p class="bold"><a href="mailto:peaceisgreen@actnow.org.in">peaceisgreen@actnow.org.in <ion-icon name="open-outline"></ion-icon></a></p>
+    </section>
+    <section>
+      <ion-buttons>
+        <ion-menu-button (click)="onClick(true, 'none')"></ion-menu-button>
+      </ion-buttons>
+      <h2>That's all folks!</h2>
+      <p>Enough scrolling for today, time to ACT NOW!</p>
+    </section>
+  </div>
+</ion-content>

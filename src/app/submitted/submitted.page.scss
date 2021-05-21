@@ -1,0 +1,53 @@
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(circle, #28529e, #496db4, #6788c9, #85a5df, #a4c2f4);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: var(--ion-color-primary-contrast);
+  }
+  
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+img {
+    display: block;
+}
+  
+p {
+    font-size: 2rem;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.PisG {
+    color: #B1FC61;
+    font-weight: 700;
+    font-size: 2rem;
+}
+  
+ion-button {
+    font-family: inherit;
+    font-size: 1.25rem;
+    width: 90%;
+    margin: .5em auto;
+    text-transform: capitalize;
+}
+  
+a {
+    font-size: 1.25rem;
+    color: inherit;
+}

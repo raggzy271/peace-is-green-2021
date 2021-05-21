@@ -1,5 +1,7 @@
 {
   "name": "Peace is Green 2021 - Act Now",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
