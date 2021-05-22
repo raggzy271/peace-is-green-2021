@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Peace is Green 2021 | ACT NOW</name>
-    <description>The official app for the event "Peace is Green 2021" by organized by ACT NOW India</description>
-    <author email="peaceisgreen@actnow.org.in " href="http://www.actnow.org.in/">ACT NOW</author>
+    <name>ACT NOW</name>
+    <description>The official app of the ACT NOW Organization. </description>
+    <author email="actnow.org.in@gmail.com" href="http://www.actnow.org.in/">ACT NOW</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -99,4 +99,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+</widget>
+<widget xmlns:android="http://schemas.android.com/apk/res/android">
+  <platform name="android">
+    <edit-config xmlns:android="http://schemas.android.com/apk/res/android" file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:networkSecurityConfig="@xml/network_security_config" />
+    </edit-config>
+    <resource-file src="network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
+  </platform>
 </widget>
