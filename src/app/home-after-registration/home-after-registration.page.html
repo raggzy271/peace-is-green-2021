@@ -6,10 +6,10 @@
         <ion-menu-button (click)="onClick(true, 'home')"></ion-menu-button>
       </ion-buttons>
       <img src="../../assets/BlueEarthAndDove.png" alt="Peace is Green '21">
-      <h1 class="PisG">Peace is Green '21</h1>
+      <h1><span class="PisG">Peace is Green</span><br>Every Act Matters</h1>
       <div>
         <p>WORLD’S LONGEST & LARGEST ENVIRONMENT ONLINE EVENT</p>
-        <p>24 Hours – A Million Reach</p>
+        <p>4-5 June | 24 Hours | 6:30am UTC | 12pm IST</p>
       </div>
       <app-scroll-down color="white"></app-scroll-down>
     </section>
@@ -200,7 +200,7 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(true, 'guests-and-hosts')"></ion-menu-button>
       </ion-buttons>
-      <h2>Hosts/Co-hosts</h2>
+      <h2>Hosts</h2>
       <div class="slider">
         <ion-icon class="slider-nav" (click)="prev('hosts')" name="chevron-back-outline" [hidden]="isFirstHostSlide">
         </ion-icon>
@@ -218,7 +218,7 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(false, 'guests-and-hosts')"></ion-menu-button>
       </ion-buttons>
-      <h2>Guests of Honor</h2>
+      <h2>Guests</h2>
       <div class="slider">
         <ion-icon class="slider-nav" (click)="prev('guests')" name="chevron-back-outline" [hidden]="isFirstGuestSlide">
         </ion-icon>
@@ -257,7 +257,7 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
       </ion-buttons>
-      <h2>Activities</h2>
+      <h2>Activities for Participants</h2>
       <p class="bold">Each participant will receive an International Certificate.</p>
       <p class="bold">A few selected entries will be featured during the event.</p>
       <p>Step 1 - Choose and carry out ONE or MORE activities given below:</p>
@@ -273,7 +273,7 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(true, 'activities')"></ion-menu-button>
       </ion-buttons>
-      <h2>Activities</h2>
+      <h2>Activities for Participants</h2>
       <div class="activity">
         <h3>Digital Photography</h3>
         <p><span class="bold">Theme:</span> Our Ecosystem</p>
@@ -295,17 +295,17 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
       </ion-buttons>
-      <h2>Activities</h2>
+      <h2>Activities for Participants</h2>
       <div class="activity">
         <h3>Fancy Dress (for age 6 and below)</h3>
         <p><span class="bold">Theme:</span> Any, related to environment</p>
       </div>
       <div class="activity">
-        <div class="activity">
-          <h3>Dance (solo, group, or synchronized)</h3>
-          <p><span class="bold">Length:</span> 1-3 minutes</p>
-          <p><span class="bold">Theme:</span> Any, original or recreation related to environment</p>
-        </div>
+        <h3>Dance (solo, group, or synchronized)</h3>
+        <p><span class="bold">Length:</span> 1-3 minutes</p>
+        <p><span class="bold">Theme:</span> Any, original or recreation related to environment</p>
+      </div>
+      <div class="activity">
         <h3>Slogan Making</h3>
         <p><span class="bold">Theme:</span> Any original composition, related to environment</p>
       </div>
@@ -315,17 +315,22 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(true, 'activities')"></ion-menu-button>
       </ion-buttons>
-      <h2>Activities</h2>
+      <h2>Activities for Participants</h2>
       <p>Step 2 - Complete the following steps to receive your International Certificate.</p>
       <ol class="activity">
-        <li><a href="/register">Register for the event <ion-icon name="open-outline"></ion-icon></a> (if you haven't already)</li>
+        <li><a href="/register">Register for the event <ion-icon name="open-outline"></ion-icon></a> (if you haven't
+          already)</li>
         <li>
           Carry out ANY TWO/THREE of the following:
           <ul>
-            <li><a href="https://www.facebook.com/actnoworgin/">Like ACT NOW on Facebook <ion-icon name="open-outline"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/actnoworgin/">Follow ACT NOW on Instagram <ion-icon name="open-outline"></ion-icon></a></li>
-            <li><a href="https://twitter.com/actnoworgin/">Follow ACT NOW on Twitter <ion-icon name="open-outline"></ion-icon></a></li>
-            <li><a href="https://www.youtube.com/actnoworgin/">Subscribe ACT NOW on YouTube <ion-icon name="open-outline"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/actnoworgin/">Like ACT NOW on Facebook <ion-icon name="open-outline">
+                </ion-icon></a></li>
+            <li><a href="https://www.instagram.com/actnoworgin/">Follow ACT NOW on Instagram <ion-icon
+                  name="open-outline"></ion-icon></a></li>
+            <li><a href="https://twitter.com/actnoworgin/">Follow ACT NOW on Twitter <ion-icon name="open-outline">
+                </ion-icon></a></li>
+            <li><a href="https://www.youtube.com/actnoworgin/">Subscribe ACT NOW on YouTube <ion-icon
+                  name="open-outline"></ion-icon></a></li>
           </ul>
         </li>
         <li>
@@ -344,15 +349,18 @@
       <ion-buttons>
         <ion-menu-button (click)="onClick(false, 'activities')"></ion-menu-button>
       </ion-buttons>
-      <h2>Activities</h2>
+      <h2>Activities for Participants</h2>
       <p>Step 3 - Finally, email your entries.</p>
-      <p class="bold"><a href="mailto:peaceisgreen@actnow.org.in">peaceisgreen@actnow.org.in <ion-icon name="open-outline"></ion-icon></a></p>
+      <p class="bold"><a href="mailto:peaceisgreen@actnow.org.in">peaceisgreen@actnow.org.in <ion-icon
+            name="open-outline"></ion-icon></a></p>
     </section>
     <section>
       <ion-buttons>
         <ion-menu-button (click)="onClick(true, 'none')"></ion-menu-button>
       </ion-buttons>
       <h2>That's all folks!</h2>
+      <p><a href="https://www.facebook.com/actnoworgin/">Tune in Live on Facebook @actnoworgin <ion-icon name="open-outline"></ion-icon></a></p>
+      <p>4-5 June | 24 Hours | 6:30am UTC | 12pm IST</p>
       <p>Enough scrolling for today, time to ACT NOW!</p>
     </section>
   </div>

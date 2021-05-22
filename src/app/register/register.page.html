@@ -7,7 +7,7 @@
       </ion-buttons>
 
       <img src="../../assets/Actnow-Logo-Without EdgeNew.png" alt="Act Now Logo">
-      <h1>Peace is Green - Every Act Matters</h1>
+      <h1>Peace is Green<br>Every Act Matters</h1>
       <h2>Registration Form</h2>
 
       <form (submit)="submit()">
@@ -95,11 +95,7 @@
 
           <div *ngSwitchCase="3">
             <ion-input placeholder="Country Code (Eg. +91)" name="country-code" [(ngModel)]="countryCode" required></ion-input>
-            <ion-input placeholder="Mobile Number" name="mobile-number" [(ngModel)]="mobileNumber" required></ion-input>
-            <ion-item>
-              <ion-checkbox name="on-whatsapp" [(ngModel)]="onWhatsApp"></ion-checkbox>
-              <p class="label">Are you on Whatsapp?</p>
-            </ion-item>
+            <ion-input placeholder="Whatsapp Number" name="whatsapp-number" [(ngModel)]="whatsappNumber" required></ion-input>
             <ion-input placeholder="Email Address" name="email" [(ngModel)]="email" required></ion-input>
           </div>
 

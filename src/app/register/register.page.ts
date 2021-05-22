@@ -27,8 +27,7 @@ export class RegisterPage implements OnInit {
   fromACTorENO: string = '';
 
   countryCode: string = '';
-  mobileNumber: string = '';
-  onWhatsApp: boolean = false;
+  whatsappNumber: string = '';
   email: string = '';
 
   nationality: string = '';
@@ -89,8 +88,7 @@ export class RegisterPage implements OnInit {
               organizationType: this.organizationType,
               fromACTorENO: this.fromACTorENO,
               countryCode: this.countryCode,
-              mobileNumber: this.mobileNumber,
-              onWhatsApp: this.onWhatsApp,
+              whatsappNumber: this.whatsappNumber,
               email: this.email,
               nationality: this.nationality,
               country: this.country,
