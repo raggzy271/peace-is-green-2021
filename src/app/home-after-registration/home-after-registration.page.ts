@@ -25,14 +25,14 @@ export class HomeAfterRegistrationPage implements OnInit {
   @ViewChild('guestSlides') guestSlides: IonSlides;
   @ViewChild('languageHelpersSlides') languageHelpersSlides: IonSlides;
 
-  isFirstHostSlide: boolean;
-  isLastHostSlide: boolean;
+  isFirstHostSlide: boolean = true;
+  isLastHostSlide: boolean = false;
   
-  isFirstGuestSlide: boolean;
-  isLastGuestSlide: boolean;
+  isFirstGuestSlide: boolean = true;
+  isLastGuestSlide: boolean = false;
   
-  isFirstLanguageHelperSlide: boolean;
-  isLastLanguageHelperSlide: boolean;
+  isFirstLanguageHelperSlide: boolean = true;
+  isLastLanguageHelperSlide: boolean = false;
 
   next(slider: string) {
     switch (slider) {
@@ -116,11 +116,9 @@ export class HomeAfterRegistrationPage implements OnInit {
     }).then(() => {
       // We're calling the following, because we want to initialize isFirst...Slide and isLast...Slide booleans
 
-      this.offline = this.hosts.length == 0 || this.guests.length == 0 || this.languageHelpers.length == 0; 
-
-      this.slideChange('hosts');
-      this.slideChange('guests');
-      this.slideChange('languageHelpers');
+      this.offline = this.hosts.length == 0 || this.guests.length == 0 || this.languageHelpers.length == 0;
+      this.isLastLanguageHelperSlide = this.languageHelpers.length == 1;
+      
     });
   }
 
