@@ -6,7 +6,7 @@
 
 #### Peace is Green is an annual web symposium. It runs for 24 hours and is the longest and largest online event. People from all around the world come together to talk about out our planet. http://www.actnow.org.in/peace-is-green-2021.html
 
-## Created using Ionic, Angular, Firebase (Firestore) Visual Studio Code (and lots of inputs from StackOverFlow!)
+## Created using Ionic, Angular, Firebase (Firestore), Visual Studio Code (and lots of inputs from StackOverFlow!)
 
 <img src="https://yt3.ggpht.com/ytc/AAUvwnggmkxoeKBLMh8twwWRUeWnQOgi9ShG92SGOfDZ8w=s88-c-k-c0x00ffffff-no-rj" width="100px">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" width="100px">  <img src="https://yt3.ggpht.com/ytc/AAUvwni6auGZNOFo5PfYQUwW4mLmCMRJ1sHXqApbh_fwYw=s900-c-k-c0x00ffffff-no-rj" width="100px">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" width="100px"><img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" width="100px">
 
