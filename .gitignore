@@ -30,4 +30,5 @@ npm-debug.log*
 /plugins
 /www
 firebase.firestore.config.json
-my-release-key.keystore
+actnow.keystore
+ActNow-v0.1.apk
